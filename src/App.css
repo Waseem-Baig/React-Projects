@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,
+body {
+  margin: 0;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+}
+
+.app {
+  width: fit-content;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  gap: 2rem;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  padding: 1rem;
+  border-radius: 50px;
+  margin-top: 3rem;
+}
+
+.header {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+.bill {
+  display: flex;
+  align-items: center;
+}
+
+.tip {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+p {
+  width: 20vw;
+  padding: 1rem;
+  margin: 0.4rem 1rem;
+  background: radial-gradient(
+    780px at 37.8% 100.3%,
+    rgb(19, 55, 115) 2.2%,
+    rgb(32, 7, 80) 20.2%,
+    rgb(27, 88, 111) 58.6%,
+    rgb(115, 88, 44) 75%,
+    rgb(99, 19, 90) 89.6%,
+    rgb(12, 51, 76) 96.1%
+  );
+  border-radius: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,
+select {
+  background: radial-gradient(
+    666px at 0.4% 48%,
+    rgb(202, 204, 227) 0%,
+    rgb(89, 89, 99) 97.5%
+  );
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  color: black;
+  font-size: 1rem;
 }
